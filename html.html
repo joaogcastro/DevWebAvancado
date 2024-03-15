@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,22 +8,19 @@
     <script src="js.js"></script>
     <title>Exercicio Color Guessing</title>
 </head>
-<body>
-    <h1>From the list below, what color im i thinking for ?</h1>
-    <!--<h3>aqua, blue, coral, gold, green, purple, red, teal, tomato, yellow</h3>-->
+
+<body">
+    <h2>From the list below, what color am I thinking of?</h2>
     <div id="colorDiv"></div>
-    <div id="score">Score: 0</div>
 
-    <div class="ResultMessage"><p>You guessed</p></div>
+    <div id="resultMessage"></div>
 
-    <div class="GuessMessage"><p>It took 1 guess to finish the game</p></div>
+    <div id="guessMessage"></div>
 
     <div>
-        <input type="text">
-        <button onclick="script.ButtonClick()">Make a guess</button>
+        <input id="textbox" type="text">
+        <button onclick="analyzeAnswer()">Make a guess</button>
     </div>
-    
-    <div><p>The answer will be displayed on console f12</p></div>
-    
 </body>
+
 </html>
