@@ -1,0 +1,50 @@
+.track {
+  width: 1905px; /* Alterado para largura de 1920px */
+  height: 800px;
+  background-image: url('./Img/racetrack.png');
+}
+
+#car1 {
+  position: absolute;
+  width: 120px;
+  height: 50px;
+  top: 75px;
+  background-image: url('./Img/CarMB.png');
+  background-size: contain;
+}
+
+#car2 {
+  position: absolute;
+  width: 120px;
+  height: 50px;
+  background-image: url('./Img/CarRB.png');
+  background-size: contain;
+  top: 245px;
+}
+
+#car3 {
+  position: absolute;
+  width: 120px;
+  height: 50px;
+  background-image: url('./Img/CarFr.png');
+  background-size: contain;
+  top: 415px;
+}
+
+#car4 {
+  position: absolute;
+  width: 120px;
+  height: 50px;
+  background-image: url('./Img/CarAM.png');
+  background-size: contain;
+  top: 585px;
+}
+
+#car5 {
+  position: absolute;
+  width: 120px;
+  height: 50px;
+  background-image: url('./Img/CarMCL.png');
+  background-size: contain;
+  top: 755px;
+}
