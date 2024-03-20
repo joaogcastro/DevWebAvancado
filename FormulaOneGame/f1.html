@@ -9,10 +9,17 @@
 <body onload="init()">
   <div class="betMenu">
     <div id="htmlBalance">Balance</div>
-    <div id="betMenu">
-      <p>Bet value</p>
-      <input type="text">
-      <button onclick="setBet()">Bet</button>
+    <div>
+      Bet Value
+      <input id="betValue" type="number">
+      <div id="htmlActiveBet">Car:      Bet:</div>
+    </div>
+    <div>
+      <button onclick="setBetC1()">Bet Car 1</button>
+      <button onclick="setBetC2()">Bet Car 2</button>
+      <button onclick="setBetC3()">Bet Car 3</button>
+      <button onclick="setBetC4()">Bet Car 4</button>
+      <button onclick="setBetC5()">Bet Car 5</button>
     </div>
     <Button onclick="startRace()">Start Race</Button>
   </div>

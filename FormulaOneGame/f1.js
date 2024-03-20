@@ -8,6 +8,9 @@ let posX4 = 0;
 let posX5 = 0;
 let myInterval;
 let balance;
+let betV;
+let betC;
+let activeBet;
 
 function myTimer() {
   posX1 += Math.ceil(Math.random() * 50);
@@ -79,4 +82,109 @@ function init(){
   balance = 200;
   const htmlBalance = document.getElementById("htmlBalance");
   htmlBalance.innerHTML = 'Balance: '+ balance;
+  activeBet = false;
+}
+
+function setBetC1 (){
+  betC = 'C1';
+  let inputBetV = document.getElementById("betValue").value;
+  if(inputBetV <= balance && inputBetV > 0 && activeBet === false){
+    betV = inputBetV;
+    activeBet = true;
+    alert("Your bet is $"+ betV + " in Hamilton!")
+    updateActualBet(betC, betV);
+  }
+  else{
+    alert("Your bet is higher than your balance.")
+  }
+  
+}
+
+function setBetC2 (){
+  betC = 'C2';
+  let inputBetV = document.getElementById("betValue").value;
+  if(inputBetV <= balance && inputBetV > 0 && activeBet === false){
+    betV = inputBetV;
+    activeBet = true;
+    alert("Your bet is $"+ betV + " in Verstappen!")
+    updateActualBet(betC, betV);
+  }
+  else{
+    alert("Your bet is higher than your balance.")
+  }
+  
+}
+
+function setBetC3 (){
+  betC = 'C3';
+  let inputBetV = document.getElementById("betValue").value;
+  if(inputBetV <= balance && inputBetV > 0 && activeBet === false){
+    betV = inputBetV;
+    activeBet = true;
+    alert("Your bet is $"+ betV + " in Leclerc!")
+    updateActualBet(betC, betV);
+  }
+  else{
+    alert("Your bet is higher than your balance.")
+  }
+  
+}
+
+function setBetC4 (){
+  betC = 'C4';
+  let inputBetV = document.getElementById("betValue").value;
+  if(inputBetV <= balance && inputBetV > 0 && activeBet === false){
+    betV = inputBetV;
+    activeBet = true;
+    alert("Your bet is $"+ betV + " in Alonso!")
+    updateActualBet(betC, betV);
+  }
+  else{
+    alert("Your bet is higher than your balance.")
+  }
+  
+}
+
+function setBetC5 (){
+  betC = 'C5';
+  let inputBetV = document.getElementById("betValue").value;
+  if(inputBetV <= balance && inputBetV > 0 && activeBet === false){
+    betV = inputBetV;
+    activeBet = true;
+    alert("Your bet is $"+ betV + " in Norris!")
+    updateActualBet(betC, betV);
+  }
+  else{
+    alert("Your bet is higher than your balance.")
+  }
+  
+}
+
+function updateActualBet(betC, betV){
+  htmlActiveBet = document.getElementById("htmlActiveBet");
+  switch (betC) {
+    case 'C1':
+      htmlActiveBet.innerHTML = "Car: Hamilton   Value betted:" + betV;
+      break;
+
+    case 'C2':
+      htmlActiveBet.innerHTML = "Car: Verstappen   Value betted:" + betV;
+      break;
+
+    case 'C3':
+      htmlActiveBet.innerHTML = "Car: Leclerc   Value betted:" + betV;
+      break;
+
+    case 'C4':
+      htmlActiveBet.innerHTML = "Car: Alonso   Value betted:" + betV;
+      break;
+
+    case 'C5':
+      htmlActiveBet.innerHTML = "Car: Norris   Value betted:" + betV;
+      break;
+
+    default:
+      console.error("There is an issue with updateActualBet function")
+      break;
+  }
 }
