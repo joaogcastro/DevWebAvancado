@@ -4,11 +4,34 @@
   background-image: url('./Img/racetrack.png');
 }
 
+.betMenu{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 30px;
+}
+
+.betButtons{
+  display: flex;
+}
+
+.button{
+  width: 150px; /* Define a largura do botão */
+  height: 50px; /* Define a altura do botão */
+  font-size: 16px; /* Define o tamanho da fonte do texto no botão */
+}
+
+#htmlBalance{
+  font-size: 35px;
+}
+
+#evilButtons{
+  margin-left: 900px;
+}
+
 #car1 {
   position: absolute;
   width: 120px;
   height: 50px;
-  top: 150px;
+  top: 270px;
   background-image: url('./Img/CarMB.png');
   background-size: contain;
 }
@@ -19,7 +42,7 @@
   height: 50px;
   background-image: url('./Img/CarRB.png');
   background-size: contain;
-  top: 320px;
+  top: 440px;
 }
 
 #car3 {
@@ -28,7 +51,7 @@
   height: 50px;
   background-image: url('./Img/CarFr.png');
   background-size: contain;
-  top: 490px;
+  top: 610px;
 }
 
 #car4 {
@@ -37,7 +60,7 @@
   height: 50px;
   background-image: url('./Img/CarAM.png');
   background-size: contain;
-  top: 660px;
+  top: 780px;
 }
 
 #car5 {
@@ -46,5 +69,5 @@
   height: 50px;
   background-image: url('./Img/CarMCL.png');
   background-size: contain;
-  top: 830px;
+  top: 950px;
 }
