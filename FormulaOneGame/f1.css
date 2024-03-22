@@ -1,7 +1,5 @@
-.track {
-  width: 1905px; /* Alterado para largura de 1920px */
-  height: 800px;
-  background-image: url('./Img/racetrack.png');
+#htmlBalance{
+  font-size: 35px;
 }
 
 .betMenu{
@@ -9,65 +7,75 @@
   font-size: 30px;
 }
 
-.betButtons{
+.divBetButtons{
   display: flex;
 }
 
 .button{
+  width: 100px;
+  height: 25px;
+  font-size: 16px;
+}
+
+#divEvilButtons{
+  margin-left: 900px;
+}
+
+.evilButton{
   width: 150px; /* Define a largura do botão */
-  height: 50px; /* Define a altura do botão */
+  height: 25px; /* Define a altura do botão */
   font-size: 16px; /* Define o tamanho da fonte do texto no botão */
 }
 
-#htmlBalance{
-  font-size: 35px;
-}
+.track {
+  width: 1890px;
+  height: 720px;
+  background-image: url('./Img/racetrack.png');
 
-#evilButtons{
-  margin-left: 900px;
 }
 
 #car1 {
   position: absolute;
   width: 120px;
   height: 50px;
-  top: 270px;
+  top: 214px;
   background-image: url('./Img/CarMB.png');
   background-size: contain;
 }
+/*Difference 153px*/
 
 #car2 {
   position: absolute;
   width: 120px;
   height: 50px;
+  top: 367px;
   background-image: url('./Img/CarRB.png');
   background-size: contain;
-  top: 440px;
 }
 
 #car3 {
   position: absolute;
   width: 120px;
   height: 50px;
+  top: 520px;
   background-image: url('./Img/CarFr.png');
   background-size: contain;
-  top: 610px;
 }
 
 #car4 {
   position: absolute;
   width: 120px;
   height: 50px;
+  top: 673px;
   background-image: url('./Img/CarAM.png');
   background-size: contain;
-  top: 780px;
 }
 
 #car5 {
   position: absolute;
   width: 120px;
   height: 50px;
+  top: 826px;
   background-image: url('./Img/CarMCL.png');
   background-size: contain;
-  top: 950px;
 }
